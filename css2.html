@@ -1,0 +1,142 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Responsive Product Grid</title> 
+  <style> 
+    header{
+        background-color: gold;
+        font-family: Cambria;
+        font-size: 30px;
+        text-align : center;
+        padding: 5px;
+    }
+
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background: #f5f5f5; 
+      padding: 20px; 
+    } 
+ 
+    h2 { 
+      text-align: center; 
+      margin-bottom: 20px; 
+      font-family: cambria;
+    } 
+
+    .grid { 
+      display: grid; 
+      grid-template-columns: repeat(4, 1fr); 
+      gap: 20px; 
+    }
+    
+    .card { 
+      background: #fff; 
+      border-radius: 8px; 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+      padding: 16px; 
+      text-align: center; 
+    } 
+ 
+    .card img { 
+      width: 90%; 
+      height: auto; 
+      object-fit: cover; 
+      border-radius: 6px; 
+      margin-bottom: 10px; 
+    } 
+ 
+    .card h3 { 
+      font-size: 18px; 
+      margin: 8px 0; 
+    } 
+ 
+    .card p { 
+      font-size: 14px; 
+      color: rgb(14, 13, 13);
+      margin: 4px 0; 
+    } 
+ 
+    .price { 
+      font-weight: bold; 
+      color: darkblue; 
+      font-size: medium;
+    } 
+ 
+    .add-cart { 
+    display: block;                  
+    width: 100%;                     
+    padding: 10px;                  
+    background: #0066cc;            
+    color: #fff; 
+    border: none; 
+    border-radius: 4px;             
+    cursor: pointer; 
+    font-size: 16px;                 
+    }
+     
+    @media (max-width: 1024px) { 
+      .grid { 
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */ 
+      } 
+    } 
+ 
+    @media (max-width: 600px) { 
+      .grid { 
+        grid-template-columns: 1fr; /* 1 column for mobile */ 
+      } 
+    } 
+
+    footer{
+    background-color: rgb(241, 232, 181);
+    text-align: center;
+    padding: 10px;
+    font-size: x-larger;
+    }
+  </style> 
+</head> 
+<body> 
+  <header><h1><B>SAVANA</B></h1></header>
+  <h2>Responsive Product Grid</h2> 
+<div class="grid"> 
+    <div class="card"> 
+      <img src="product1.webp" alt="Product 1"> 
+      <h3>STYLUM</h3> 
+      <p>Women's Floral Printed Cotton Flared Dress.</p> 
+      <p class="price">₹699</p> 
+      <button class="add-cart">Add to Cart</button>
+    </div> 
+ 
+    <div class="card"> 
+      <img src="product2.jpg" alt="Product 2"> 
+      <h3>CLAURA</h3> 
+      <p>Floral Print Puff Sleeve V-Neck Midi Dress.</p> 
+      <p class="price">₹799</p> 
+      <button class="add-cart">Add to Cart</button>
+    </div> 
+ 
+    <div class="card"> 
+      <img src="product3.jpg" alt="Product 3"> 
+      <h3>ICHAA</h3> 
+      <p>Women Floral Printed Puff Sleeve Fit & Flare Midi Dress.</p> 
+      <p class="price">₹999</p>
+      <button class="add-cart">Add to Cart</button>
+    </div> 
+ 
+    <div class="card"> 
+      <img src="product4.webp" alt="Product 4"> 
+      <h3>KALINI</h3> 
+      <p>Women Printed Fit & Flare Ethnic Dress With Dupatta.</p> 
+      <p class="price">₹1,999</p> 
+      <button class="add-cart">Add to Cart</button>
+    </div> 
+  </div> 
+<br>
+<footer> 
+    <p>&copy; Created by Anjali Dewari | Responsive Product Grid</p>
+</footer>
+</body> 
+</html>
+
